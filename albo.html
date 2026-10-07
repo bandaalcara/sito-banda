@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Albo Storico | Corpo Bandistico Municipale “G. Verdi”</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #24332f;
+      background: #f7f3eb;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #173f38;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #d6b46a;
+    }
+
+    .hero {
+      background: #173f38;
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #e7e2d8;
+      font-size: 1.05rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 5%;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .intro h2 {
+      font-family: Georgia, serif;
+      color: #173f38;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .search-box {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      border-top: 4px solid #c8a45d;
+    }
+
+    .search-box label {
+      display: block;
+      font-weight: bold;
+      color: #173f38;
+      margin-bottom: 10px;
+    }
+
+    #search {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccd2cf;
+      border-radius: 3px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    #search:focus {
+      border-color: #173f38;
+    }
+
+    .result-count {
+      margin-top: 12px;
+      color: #66716d;
+      font-size: 0.9rem;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      background: white;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    th {
+      background: #173f38;
+      color: white;
+      padding: 15px 12px;
+      text-align: left;
+      font-family: Georgia, serif;
+      font-weight: normal;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e2da;
+    }
+
+    tr:nth-child(even) {
+      background: #faf8f3;
+    }
+
+    tr:hover {
+      background: #f0ebe1;
+    }
+
+    .number {
+      width: 65px;
+      color: #8a7444;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #102e29;
+      color: #d8dfdc;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 750px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 13px;
+      }
+
+      main {
+        padding: 45px 4%;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Corpo Bandistico Municipale “G. Verdi”</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="la-banda.html">La Banda</a>
+    <a href="index.html#musica">Musica</a>
+    <a href="index.html#eventi">Eventi</a>
+    <a href="index.html#gallery">Galleria</a>
+    <a href="index.html#contatti">Contatti</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Albo storico</h1>
+  <p>
+    Tutti i componenti del Corpo Bandistico Municipale
+    dal 1911 ad oggi
+  </p>
+</section>
+
+<main>
+
+  <div class="intro">
+    <h2>400 nomi, oltre un secolo di musica</h2>
+    <p>
+      L'Albo storico raccoglie i componenti che hanno fatto parte
+      del Corpo Bandistico Municipale nel corso della sua storia.
+      Un patrimonio umano e musicale che attraversa generazioni,
+      strumenti e oltre un secolo di tradizione.
+    </p>
+  </div>
+
+  <div class="search-box">
+    <label for="search">Cerca nell'Albo</label>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Cerca per nome, cognome, data o strumento..."
+    >
+
+    <div class="result-count" id="resultCount">
+      400 componenti
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>N.</th>
+          <th>Nome e cognome</th>
+          <th>Data di nascita</th>
+          <th>Strumento / ruolo</th>
+        </tr>
+      </thead>
+
+      <tbody id="alboBody">
+        <!-- I 400 componenti verranno inseriti qui -->
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Associazione Musicale Alcarese – Corpo Bandistico Municipale “G. Verdi”</p>
+  <p>Dal 1911, musica e tradizione.</p>
+</footer>
+
+<script>
+
+const componenti = [
+
+  // QUI INSERIREMO I 400 COMPONENTI
+
+];
+
+const tbody = document.getElementById("alboBody");
+const search = document.getElementById("search");
+const resultCount = document.getElementById("resultCount");
+
+function mostraComponenti(lista) {
+
+  tbody.innerHTML = "";
+
+  lista.forEach(persona => {
+
+    const riga = document.createElement("tr");
+
+    riga.innerHTML = `
+      <td class="number">${persona.n}</td>
+      <td>${persona.nome}</td>
+      <td>${persona.data}</td>
+      <td>${persona.strumento}</td>
+    `;
+
+    tbody.appendChild(riga);
+  });
+
+  resultCount.textContent =
+    lista.length === 1
+      ? "1 componente trovato"
+      : `${lista.length} componenti trovati`;
+}
+
+search.addEventListener("input", function() {
+
+  const termine = this.value.toLowerCase().trim();
+
+  const filtrati = componenti.filter(persona =>
+    `${persona.n} ${persona.nome} ${persona.data} ${persona.strumento}`
+      .toLowerCase()
+      .includes(termine)
+  );
+
+  mostraComponenti(filtrati);
+});
+
+mostraComponenti(componenti);
+
+</script>
+
+</body>
+</html>

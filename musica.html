@@ -91,13 +91,42 @@
       color: #4d514d;
     }
 
-    .card {
-      background: #f7f3ea;
-      padding: 35px;
-      margin-top: 30px;
-      border: 1px solid rgba(30, 51, 45, 0.12);
-    }
+   .card {
+  background: #f7f3ea;
+  padding: 40px;
+  margin-top: 35px;
+  border: 1px solid rgba(30, 51, 45, 0.12);
+  box-shadow: 0 8px 25px rgba(30, 51, 45, 0.06);
+}
 
+.card h2 {
+  color: #1e332d;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  color: #1e332d;
+  font-family: Georgia, serif;
+  margin-top: 30px;
+}
+
+.card p {
+  margin-bottom: 18px;
+}
+.photo-placeholder {
+  margin-top: 30px;
+  min-height: 220px;
+  background: #e9e3d6;
+  border: 2px dashed #c9a45c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e332d;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-align: center;
+}
     footer {
       background: #1e332d;
       color: #f7f3ea;
@@ -105,16 +134,36 @@
       padding: 35px 7%;
     }
 
-    @media (max-width: 800px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+ @media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-      h1 {
-        font-size: 42px;
-      }
-    }
+  nav {
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+
+  .photo-placeholder {
+    min-height: 180px;
+  }
+}
   </style>
 </head>
 
@@ -400,7 +449,6 @@
 
   </div>
 </section>
-
 <section>
   <div class="content">
 
@@ -408,33 +456,144 @@
 
     <h2>I risultati della nostra Scuola</h2>
 
-    <div class="card">
-      <h2>🥇 Primo Premio — 2026</h2>
-      <p>
-        Concorso Musicale Nazionale “Salvuccio Percacciolo”
-        di Mirto.
-      </p>
-      <p><strong>100/100 — Primo premio assoluto</strong></p>
-      <p><strong>Foto del concorso</strong></p>
-    </div>
+    <!-- CONCORSO 2026 - MIRTO -->
 
     <div class="card">
-      <h2>🥇 Primo Premio — 2026</h2>
+
+      <h2>🥇 Primo Premio al Concorso Musicale Nazionale "Salvuccio Percacciolo" 2026</h2>
+
       <p>
-        XVIII Edizione del Concorso Musicale Nazionale
-        “Maria Grazia Cutuli” — Crotone.
+        Congratulazioni ai nostri Ragazzi e al M° S. Santoro per aver
+        conseguito un altro importante risultato.
       </p>
-      <p><strong>Foto del concorso</strong></p>
+
+      <p>
+        La Scuola di Musica del Corpo Bandistico Municipale Alcarese
+        conferma la propria voglia di migliorarsi, misurarsi e divertirsi
+        all'insegna della musica aggiudicandosi, con punti
+        <strong>100/100</strong>, il <strong>1° premio assoluto</strong>
+        al Concorso Nazionale "Salvuccio Percacciolo" di Mirto.
+      </p>
+
+      <p>
+        Questo successo, frutto di impegno e determinazione, dà lustro
+        alla cultura musicale Alcarese e crea un continuum con il lavoro
+        e l'ambizione del nostro Corpo Bandistico, pronto ad accogliere
+        con gioia questi ragazzi meravigliosi nel mondo "dei grandi".
+      </p>
+
+      <div class="photo-placeholder">
+        📷 Foto del concorso
+      </div>
+
     </div>
 
+
+    <!-- CONCORSO 2026 - CROTONE -->
+
     <div class="card">
-      <h2>🥈 Secondo Premio — 2025</h2>
+
+      <h2>🥇 Primo Premio alla XVIII Edizione del Concorso Musicale Nazionale "Maria Grazia Cutuli"</h2>
+
       <p>
-        Rassegna musicale scolastica / Premio Internazionale
-        “Salvuccio Percacciolo” di Mirto.
+        <strong>ORGOGLIO ALCARESE: I NOSTRI RAGAZZI CONQUISTANO
+        IL PRIMO PREMIO!</strong>
       </p>
-      <p><strong>94/100</strong></p>
-      <p><strong>Foto del concorso</strong></p>
+
+      <p>
+        La gioia è immensa e l'emozione ancora di più! Con immenso
+        orgoglio, noi, Corpo Bandistico Municipale “G.Verdi” di
+        Alcara li Fusi festeggiamo i ragazzi della nostra Scuola
+        di Musica, che hanno conquistato il
+        <strong>Primo Premio</strong> alla XVIII Edizione del
+        Concorso Musicale Nazionale “Maria Grazia Cutuli” che si
+        è svolta nel mese di maggio del <strong>2026 a Crotone</strong>!
+      </p>
+
+      <p>
+        Partiti con la voglia di mettersi in gioco e di vivere
+        un'importante esperienza di crescita, i nostri giovani
+        musicisti hanno superato ogni aspettativa, dimostrando sul
+        palco non solo un grandissimo talento, ma anche una maturità
+        e una passione straordinarie.
+      </p>
+
+      <p>
+        Un ringraziamento speciale va al M° Santino Santoro, che con
+        dedizione, pazienza e guida sapiente ha accompagnato i ragazzi
+        in questo percorso, valorizzando il lavoro svolto durante
+        tutto l'anno.
+      </p>
+
+      <p>
+        Questo traguardo non è solo una vittoria in una competizione,
+        ma la conferma che l'impegno, il sacrificio e l'amore per la
+        musica ripagano sempre. Siete il futuro della nostra
+        associazione e della nostra tradizione bandistica, e non
+        potremmo essere più fieri di voi!
+      </p>
+
+      <p>
+        Grazie ragazzi per aver portato così in alto il nome di
+        Alcara Li Fusi e della nostra realtà musicale. Continuate
+        a suonare con questo entusiasmo e a farci emozionare!
+      </p>
+
+      <div class="photo-placeholder">
+        📷 Foto del concorso
+      </div>
+
+    </div>
+
+
+    <!-- CONCORSO 2025 - MIRTO -->
+
+    <div class="card">
+
+      <h2>🥈 Secondo Premio — 22 maggio 2025</h2>
+
+      <p>
+        <strong>
+          Partecipazione degli studenti della nostra Scuola di Musica
+          alla Rassegna musicale scolastica Premio Internazionale
+          "Salvuccio Percacciolo" di Mirto.
+        </strong>
+      </p>
+
+      <p>
+        <strong>Piccoli Grandi "Banditi" crescono!</strong>
+      </p>
+
+      <p>
+        Congratulazioni ai meravigliosi ragazzi della scuola di musica
+        del nostro Corpo Bandistico, guidati dal Maestro Santino Santoro,
+        per essersi aggiudicati il <strong>2° premio</strong>, con
+        votazione <strong>94/100</strong>, al Premio Internazionale
+        "Salvuccio Percacciolo"!
+      </p>
+
+      <p>
+        La musica è un essenziale mezzo di educazione e di crescita
+        musicale ma soprattutto umana.
+      </p>
+
+      <p>
+        Siamo felici che tanti giovanissimi credano fortemente in
+        questi valori, nel potere della musica di unire la passione
+        alla dedizione e alla cultura del lavoro, ma soprattutto di
+        congiungere tanti ragazzi che condividono lo stesso amore
+        per il pentagramma.
+      </p>
+
+      <p>
+        Complimenti dunque ai nostri piccoli Bandisti e a tutti i
+        partecipanti, siete il nostro avvenire.
+      </p>
+
+      <div class="photo-placeholder">
+        📷 Foto del concorso
+      </div>
+
     </div>
 
   </div>
